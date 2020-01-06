@@ -14,7 +14,7 @@ import asyncio
 
 import data
 
-logging.basicConfig(level=logging.DEBUG)
+#logging.basicConfig(level=logging.DEBUG)
 
 def config(filename=sys.path[0] + '/config.ini', section='facebook credentials'):
     # create a parser 
@@ -200,7 +200,7 @@ loop = asyncio.get_event_loop()
 async def start():
     client=HydroBot()
     print("Logging in...")
-    await client.start("sykesstudents@gmail.com", "ThisThingSucks005")
+    await client.start("sykesstudents@gmail.com", "ThisThingSucks006")
     print("Logged in")
     client.listen()
 
